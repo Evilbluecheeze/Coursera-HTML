@@ -1,3 +1,35 @@
-*{
+* {
     box-sizing: border-box;
 }
+/** Base Styles **/
+p {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #CCCCCC;
+  padding: 10px;
+}
+
+/** Desktop View **/
+@media (min-width: 992px) {
+    p {
+        color: blue;
+        width: 33%;
+        float: left;
+        margin: 10px;
+    }
+}
+
+/** Tablet View **/
+@media (min-width: 768px) and (max-width: 991px) {
+    p {
+        color: red;
+    }
+}
+
+/** Mobile View **/
+@media (max-width: 767px) {
+    p {
+        color: purple;
+    }
+}
+be
